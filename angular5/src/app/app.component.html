@@ -1,0 +1,44 @@
+
+<div >
+  <table>
+    <thead>
+    <tr>
+      <th>name</th>
+      <th>email</th>
+      <th>city</th>
+      <th><button>edit</button></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let user of users;let i=index;">
+      <td>{{user.name}}</td>
+      <td>{{user.email}}</td>
+      <td>{{user.address.city}}</td>
+      <td><button>edit</button></td>
+    </tr>
+  </tbody>
+  </table>
+</div>
+<div>
+  <ul>
+    <li *ngFor='let user of users;let first = first; let last = last'>{{user.email}}-- {{first}} -- {{last}}</li>
+  </ul>
+</div>
+
+
+<div>
+ <ul *ngFor='let user of users'>
+    <li  *ngIf='{{user.id}} %2==0'>{{user.email}}</li>
+ </ul>
+</div>
+
+
+<div *ngFor='let user of users' class="card">
+  <p>{{user.name}}</p>
+  <div>
+      {{user.id}}<br>
+      {{user.name}}<br>
+      {{user.email}}<br>
+      {{user.address.city}}
+  </div>
+</div>

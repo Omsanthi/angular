@@ -1,0 +1,18 @@
+.header{
+    background: gainsboro;
+    padding: 2px 5px;
+    
+}
+ul{
+  
+    padding:0px;
+    list-style: none;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+li{
+    text-decoration: none;
+    font-weight: bolder;
+    padding: 0px 50px
+}

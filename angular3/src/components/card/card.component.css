@@ -1,0 +1,16 @@
+.card{
+    border:1px solid black;
+    margin-left:auto;
+    width:30%;
+    margin-right:auto;
+    margin-top:50px;
+}
+.card-header{
+    border-bottom:1px solid black;
+    font-weight: bolder;
+    padding:10px
+
+}
+.card-body{
+    text-align: center;
+}
