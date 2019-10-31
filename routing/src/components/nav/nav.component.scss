@@ -1,0 +1,20 @@
+.nav{
+    border-bottom:1px solid #333333;
+}
+ul{
+    list-style:none;
+    display: flex;
+    margin:0 auto;
+
+}
+a{
+    text-decoration:none;
+}
+
+
+li{
+    padding:0px 20px;
+    text-transform: capitalize;
+    line-height: 45px;
+    
+}

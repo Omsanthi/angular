@@ -9,7 +9,6 @@ import * as $ from 'jquery';
 export class TableComponent implements OnInit {
 users;
   constructor() { }
-
   ngOnInit() {
     var  that=this;
       $.ajax({
@@ -17,10 +16,9 @@ users;
         method:"GET",
         data:{},
         success:function(res){
-          console.log(res)
+          // console.log(res)
           that.users=res;  
-        },
-        error:function(err){}
+        }
      })
     }
 }
